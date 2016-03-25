@@ -20,9 +20,7 @@ public class ProjetoDAO {
 		
 		try{
 			
-			em.getTransaction().begin();
 			obj = em.find(Projeto.class, id);
-			em.getTransaction().commit();
 			
 		}catch(Exception e){
 			e.printStackTrace();

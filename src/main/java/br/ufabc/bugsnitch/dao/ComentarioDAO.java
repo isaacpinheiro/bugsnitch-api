@@ -20,9 +20,7 @@ public class ComentarioDAO {
 		
 		try{
 			
-			em.getTransaction().begin();
 			obj = em.find(Comentario.class, id);
-			em.getTransaction().commit();
 			
 		}catch(Exception e){
 			e.printStackTrace();

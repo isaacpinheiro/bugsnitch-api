@@ -20,9 +20,7 @@ public class AnexoDAO {
 		
 		try{
 			
-			em.getTransaction().begin();
 			obj = em.find(Anexo.class, id);
-			em.getTransaction().commit();
 			
 		}catch(Exception e){
 			e.printStackTrace();

@@ -20,9 +20,7 @@ public class RegistroDAO {
 		
 		try{
 			
-			em.getTransaction().begin();
 			obj = em.find(Registro.class, id);
-			em.getTransaction().commit();
 			
 		}catch(Exception e){
 			e.printStackTrace();
